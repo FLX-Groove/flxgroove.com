@@ -1,0 +1,44 @@
+ul.gallery {
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-center;
+
+  li {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    transition: 0.4s;
+
+    img {
+      max-width: 200px;
+      cursor: zoom-in;
+      transition: 0.25s;
+    }
+
+    &:focus, &:active {
+      display: block;
+      order: 1;
+      width: inherit;
+      height: auto;
+      transition: 0.4s;
+      overflow: auto;
+      outline: none;
+      text-align: center;
+      order: -1;
+      flex: 1 0 100%;
+
+      img {
+        padding: 2px;
+        outline: 2px dotted black;
+        margin: 0 auto;
+        max-width: 100%;
+        transition: 0.5s;
+      }
+    }
+  }
+}

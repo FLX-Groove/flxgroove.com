@@ -1,0 +1,24 @@
+
+@mixin mobile-breakpoint { // formerly small
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet-breakpoint { // formerly medium
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop-breakpoint { // formerly large
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin fullscreen-breakpoint { // formerly xlarge
+  @media (min-width: #{$fullscreen}) {
+    @content;
+  }
+}

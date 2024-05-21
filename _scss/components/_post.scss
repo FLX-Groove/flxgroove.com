@@ -1,0 +1,12 @@
+article.post {
+  background-color: white;
+  padding: $margins;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  & > p > img {
+    max-width: 50%;
+  }
+}
